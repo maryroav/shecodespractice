@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Objects</title>
+  </head>
+  <body>
+    <script>
+      let weather = {
+        temp: 29,
+        humidity: 60,
+      };
+
+      console.log(weather);
+      // {temp: 29, humidity: 60}
+
+      console.log(weather.temp, weather.humidity);
+      // 29 60
+
+      weather.windSpeed = 3;
+      console.log(weather);
+      // {temp: 29, humidity: 60, windSpeed: 3}
+
+      console.log(weather["windSpeed"]);
+      console.log(weather["temp"]);
+      console.log(weather["humidity"]);
+
+      let forecast = [
+        {
+          day: "Monday",
+          temperature: 15,
+        },
+
+        {
+          day: "Tuesday",
+          temperature: 20,
+        },
+
+        {
+          day: "Wednesday",
+          temperature: 12,
+        },
+
+        {
+          day: "Thursday",
+          temperature: 17,
+        },
+
+        {
+          day: "Friday",
+          temperature: 15,
+        },
+
+        {
+          day: "Saturday",
+          temperature: 13,
+        },
+
+        {
+          day: "Sunday",
+          temperature: 12,
+        },
+      ];
+
+      console.log(forecast);
+      //        (7) [{…}, {…}, {…}, {…}, {…}, {…}, {…}]
+      // 0: {day: 'Monday', temperature: 15}
+      // 1: {day: 'Tuesday', temperature: 20}
+      // 2: {day: 'Wednesday', temperature: 12}
+      // 3: {day: 'Thursday', temperature: 17}
+      // 4: {day: 'Friday', temperature: 15}
+      // 5: {day: 'Saturday', temperature: 13}
+      // 6: {day: 'Sunday', temperature: 12}
+      // length: 7
+      // [[Prototype]]: Array(0)
+    </script>
+  </body>
+</html>

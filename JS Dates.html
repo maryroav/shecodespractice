@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Plus - Dates</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 900;
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+      }
+
+      h1 h2,
+      h3 {
+        color: #231d3c;
+      }
+
+      .logo {
+        display: block;
+        margin: 30px auto;
+        width: 150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>JavaScript Dates</h1>
+
+    <h3>JS Challenge 1</h3>
+    <p>Log the current date</p>
+
+    <h3>JS Challenge 2</h3>
+    <p>Log the number of milliseconds in the current time</p>
+
+    <h3>JS Challenge 3</h3>
+    <p>Log the current day</p>
+
+    <h3>JS Challenge 4</h3>
+    <p>Log the current year</p>
+
+    <h3>JS Challenge 5</h3>
+    <p>Log the current month</p>
+
+    <h3>JS Challenge 6</h3>
+    <p>
+      Display the current date following the following format: Today is
+      Thursday, April 4, 2020
+    </p>
+
+    <h3>JS Challenge 7</h3>
+    <p>
+      Create a function formatDate which returns a date following this format:
+      Thursday, April 4, 2020 Call this function with the current time Log the
+      result such as
+      <code> console.log(formatDate(new Date())); </code>
+    </p>
+
+    <script>
+      function formatDate() {}
+
+      // Challenge 1
+      let now = new Date();
+      console.log(now);
+
+      // Challenge 2
+      let milliseconds = now.getMilliseconds();
+      console.log(milliseconds);
+
+      // Challenge 3
+      let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      let day = days[now.getDay()];
+      console.log(day);
+
+      // Challenge 4
+      let year = now.getFullYear();
+      console.log(year);
+
+      // Challenge 5
+      let months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      let month = months[now.getMonth()];
+      console.log(month);
+
+      // Challenge 6
+      let date = now.getDate();
+      let sentence = `Today is ${day}, ${month} ${date}, ${year}`;
+      console.log(sentence);
+
+      // Challenge 7
+
+      formatDate(sentence);
+      console.log(formatDate(new Date()));
+    </script>
+  </body>
+</html>
